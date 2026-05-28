@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <vType id="carType"
+           accel="2.6"
+           decel="4.5"
+           sigma="0.5"
+           length="5"
+           minGap="2.5"
+           maxSpeed="13.89"
+           guiShape="passenger"/>
+
+    <route id="route_0" edges="-150357971#0 150357974 150357993#1 -106412092#1 -106412092#0 105736231#7 105736231#11 82444706#0 82444706#6 -105740277#15 -149733445#0"/>
+    <route id="route_1" edges="149733435#1 105740277#11 105740277#15 82444706#7 82444706#4 41223170#0 149921391#3 149714831#1"/>
+    <route id="route_2" edges="-106411121#3 106411125#1 105736231#0 105736231#11 82444706#0 82444706#6 -105740277#15 -149733440#0"/>
+    <route id="route_3" edges="149865798 105740241#1 151629800 105740292#6 105740277#15 82444706#0 41223170#0 149714847#2"/>
+    <route id="route_4" edges="-150363241#6 150357998#3 105736231#11 82444706#0 82444706#6 -105740277#12 -149733400#0"/>
+
+    <!-- 20 سيارة/دقيقة = period="3.00" — توازن بين الكثافة والأداء -->
+    <flow id="f_0" type="carType" begin="2.00"  end="120.00" period="3.00" route="route_0" departLane="best" departSpeed="desired"/>
+    <flow id="f_1" type="carType" begin="3.00"  end="120.00" period="3.00" route="route_1" departLane="best" departSpeed="desired"/>
+    <flow id="f_2" type="carType" begin="4.00"  end="120.00" period="3.00" route="route_2" departLane="best" departSpeed="0"/>
+    <flow id="f_3" type="carType" begin="5.00"  end="120.00" period="3.00" route="route_3" departLane="best" departSpeed="desired"/>
+    <flow id="f_4" type="carType" begin="6.00"  end="120.00" period="3.00" route="route_4" departLane="best" departSpeed="desired"/>
+
+</routes>
