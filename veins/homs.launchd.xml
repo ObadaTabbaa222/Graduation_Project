@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    <copy file="homs.net.xml" />
-    <copy file="homs.rou.xml" />
-    <copy file="homs.sumocfg" type="config" />
-</launch>
